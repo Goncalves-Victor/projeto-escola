@@ -14,6 +14,8 @@ String cpf;
 int idade;
 String naturalidade;
 
+    public Pessoa(){}
+
     public Pessoa(String nome, String cpf, int idade, String naturalidade) {
         this.nome = nome;
         this.cpf = cpf;
