@@ -11,15 +11,15 @@ package com.mycompany.central;
 public class Pessoa {
 String nome;
 String cpf;
-int idade;
+String dataNascimento;
 String naturalidade;
 
     public Pessoa(){}
 
-    public Pessoa(String nome, String cpf, int idade, String naturalidade) {
+    public Pessoa(String nome, String cpf, String nascimento, String naturalidade) {
         this.nome = nome;
         this.cpf = cpf;
-        this.idade = idade;
+        this.dataNascimento = nascimento;
         this.naturalidade = naturalidade;
     }
 
@@ -31,16 +31,16 @@ String naturalidade;
         return cpf;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getIdade() {
+        return dataNascimento;
     }
 
     public String getNaturalidade() {
         return naturalidade;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setIdade(String nascimento) {
+        this.dataNascimento = nascimento;
     }
     
 

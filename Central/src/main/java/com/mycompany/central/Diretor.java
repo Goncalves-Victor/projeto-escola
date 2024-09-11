@@ -11,8 +11,8 @@ package com.mycompany.central;
 public class Diretor extends Pessoa{
 String senha;
 
-    public Diretor(String senha, String nome, String cpf, int idade, String naturalidade) {
-        super(nome, cpf, idade, naturalidade);
+    public Diretor(String senha, String nome, String cpf, String dataDascimento, String naturalidade) {
+        super(nome, cpf, dataDascimento, naturalidade);
         this.senha = senha;
     }
     

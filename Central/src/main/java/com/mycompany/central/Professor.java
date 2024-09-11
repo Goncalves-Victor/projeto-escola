@@ -16,8 +16,8 @@ static int qtProfessor = 0;
 
 
 
-    public Professor(String senha, String nome, String cpf, int idade, String naturalidade) {
-        super(nome, cpf, idade, naturalidade);
+    public Professor(String senha, String nome, String cpf, String dataNascimento, String naturalidade) {
+        super(nome, cpf, dataNascimento, naturalidade);
        
         this.senha = senha;
         qtProfessor++;
