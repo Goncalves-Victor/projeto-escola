@@ -58,6 +58,10 @@ public class Aluno extends Pessoa {
         
     }
 
+    public Aluno getAluno(int i){
+        return listaAlunos.get(i);
+    }
+
     // Adiciona um aluno à lista de alunos
     public void addAluno(Aluno a) {
         listaAlunos.add(a);
@@ -170,7 +174,7 @@ public class Aluno extends Pessoa {
 
     // Salva os dados dos alunos em um arquivo de texto
     public void salvaData() {
-        try (PrintWriter writer = new PrintWriter(new FileWriter("data_txt/txtAlunos.txt", true))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("txtAlunos.txt", true))) {
             for (Map.Entry<String, List<Float>> entry : notaMaterias.entrySet()) {
                 String materia = entry.getKey();
                 List<Float> notas = entry.getValue();
@@ -193,7 +197,7 @@ public class Aluno extends Pessoa {
 
     // Lê os dados dos alunos existentes no txt
     public void setupData() {
-        File arquivo = new File("data_txt/txtAlunos.txt");
+        File arquivo = new File("txtAlunos.txt");
         try {
             if (arquivo.exists()) {
                 try (BufferedReader reader = new BufferedReader(new FileReader(arquivo))) {
@@ -232,11 +236,11 @@ public class Aluno extends Pessoa {
                             String[] materiaPresencaSplit = materiaPresenca.split("="); // "matéria=presença"
                             String materia = materiaPresencaSplit[0];
                             int presencaValue = Integer.parseInt(materiaPresencaSplit[1]);
-                            a.presenca.put(materia, presencaValue); // Adiciona a presença da matéria
+                            a.presenca.put(materia, presencaValue);
                         }
     
-                        addAluno(a); // Adiciona o aluno à lista
-                        qtde++; // Incrementa a quantidade de alunos
+                        addAluno(a); 
+                        qtde++; 
                     }
                 }
             } else {
