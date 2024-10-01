@@ -11,5 +11,5 @@ package com.mycompany.central;
 public interface Data {
     public void salvaData();
     public void setupData();
-    
+    public void deletData();
 }

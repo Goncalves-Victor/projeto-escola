@@ -9,10 +9,11 @@ package com.mycompany.central;
  * @author ice
  */
 public class Diretor extends Pessoa{
-String senha;
+    private String senha;
+    private double salario;
 
-    public Diretor(String senha, String nome, String cpf, String dataDascimento, String naturalidade) {
-        super(nome, cpf, dataDascimento, naturalidade);
+    public Diretor(String senha, String nome, String cpf, String dataDascimento, String naturalidade, String telefone, String endereco) {
+        super(nome, cpf, dataDascimento, naturalidade, telefone, endereco);
         this.senha = senha;
     }
     
