@@ -1,2 +1,0 @@
-0001,Primeiro,123456789,01/01/2000,Juiz de Fora,A,senha123,{Matemática=[8.5, 7.0], Português=[9.0]},{Matemática=0, Português=0}
-0002,Segundo,987654321,02/02/2001,Rio de Janeiro,B,senha456,{Matemática=[6.5], História=[8.0]},{Matemática=0, História=0}
